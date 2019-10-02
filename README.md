@@ -11,6 +11,8 @@ Then do this
 
 ```wget 'https://raw.githubusercontent.com/12nick12/librenms-zfs-linux-snmpd/master/zfs_get.sh' -O '/etc/snmp/zfs_get.sh'```
 
+```chmod +x '/etc/snmp/zfs_get.sh'```
+
 change ['/sbin/zpool', 'list', '-pH'] to ['/etc/snmp/zfs_get.sh'] in /etc/snmp/zfs-linux
 
 Now close out /etc/snmp/zfs_get.sh and LibreNMS should now show what you need after 10-15mins.
