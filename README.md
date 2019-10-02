@@ -8,6 +8,7 @@ Follow this guide below.
 https://docs.librenms.org/Extensions/Applications/#zfs
 
 Then do this 
+
 ```wget 'https://raw.githubusercontent.com/12nick12/librenms-zfs-linux-snmpd/master/zfs_get.sh' -O '/etc/snmp/zfs_get.sh'```
 
 change ['/sbin/zpool', 'list', '-pH'] to ['/etc/snmp/zfs_get.sh'] in /etc/snmp/zfs-linux
